@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Czerwony Świt - Rewolucja Październikowa</title>
+    <style>
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+
+        header {
+            background-color: #0f0f0f;
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 5px solid #de8deb;
+        }
+        header h1 {
+            font-size: 3.5em;
+            color: #de8deb;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        header p {
+            font-size: 1.2em;
+            color: #a0a0a0;
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Sekcje tekstowe */
+        section {
+            margin-bottom: 60px;
+            background: #242424;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        h2 {
+            color: #fdf0d5;
+            font-size: 2.2em;
+            border-left: 4px solid #de8deb; 
+            padding-left: 15px;
+            margin-top: 0;
+        }
+        h3 {
+            color: #de8deb; 
+            font-size: 1.5em;
+        }
+
+
+        .gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gallery-item {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 2px solid #333;
+            /* Definiujemy płynne przejście dla animacji */
+            transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: opacity 0.4s ease;
+        }
+        
+
+        .gallery-item:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 25px rgba(222, 141, 235, 0.4); /* Zmiana na różowy cień */
+            border-color: #de8deb; /* Zmiana na różowy */
+        }
+        .gallery-item:hover img {
+            opacity: 0.8;
+        }
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0f0f0f;
+            color: #777;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Czerwony Świt</h1>
+        <p>10 dni, które wstrząsnęły światem. Poznaj historię przewrotu bolszewickiego, który na zawsze zmienił układ sił na kuli ziemskiej.</p>
+    </header>
+
+    <div class="container">
+        
+        <section>
+            <h2>Iskra, która podpaliła Imperium</h2>
+            <p>Choć nazywana "październikową", w rzeczywistości wybuchła z 6 na 7 listopada 1917 roku (według kalendarza gregoriańskiego). Był to zbrojny zamach stanu w Rosji, w wyniku którego obalono Rząd Tymczasowy, a władzę przejęli bolszewicy na czele z Włodzimierzem Leninem.</p>
+            
+            <h3>Kluczowe momenty:</h3>
+            <ul>
+                <li><strong>Sygnał z "Aurory":</strong> Strzał ze słynnego krążownika dał znak do rozpoczęcia szturmu na Pałac Zimowy w Piotrogrodzie.</li>
+                <li><strong>Słabość władzy:</strong> Rząd Aleksandra Kiereńskiego był niepopularny i zdezorganizowany, co ułatwiło bolszewikom bezkrwawe przejęcie kluczowych punktów miasta.</li>
+                <li><strong>Hasła "Ziemia, Pokój, Chleb":</strong> Te proste postulaty przyciągnęły do bolszewików zmęczonych I wojną światową żołnierzy, chłopów i robotników.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Echa Upadku: Pokłosie Rewolucji</h2>
+            <p>Przejęcie władzy w stolicy było zaledwie początkiem. Decyzje podjęte jesienią 1917 roku pociągnęły za sobą tragiczną i krwawą lawinę, która ukształtowała XX wiek.</p>
+            
+            <ul>
+                <li><strong>Krwawa wojna domowa (1917-1922):</strong> Starcia między "Czerwonymi" (bolszewikami) a "Białymi" (antykomunistami) pochłonęły miliony ofiar.</li>
+                <li><strong>Powstanie ZSRR:</strong> W 1922 roku na gruzach Imperium Rosyjskiego oficjalnie proklamowano Związek Socjalistycznych Republik Radzieckich – pierwsze na świecie państwo komunistyczne.</li>
+                <li><strong>Terror i dyktatura proletariatu:</strong> Natychmiastowe utworzenie Czeka (tajnej policji) rozpoczęło erę masowych represji, cenzury i brutalnego zwalczania opozycji.</li>
+                <li><strong>Wpływ globalny:</strong> Rewolucja zainspirowała ruchy komunistyczne na całym świecie i ostatecznie doprowadziła do podziału globu podczas Zimnej Wojny.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Oblicza Rewolucji (Galeria)</h2>
+            <p>Kliknij na poniższe zdjęcia, aby dowiedzieć się więcej o kluczowych aspektach tamtych wydarzeń.</p>
+            
+            <div class="gallery">
+                
+                <a href="LINK_DO_TWOJEJ_PODSTRONY_1.html" class="gallery-item">
+                    <img src="lenin.jpg" alt="Włodzimierz Lenin">
+                    <div class="gallery-caption">Włodzimierz Lenin - Wódz Rewolucji</div>
+                </a>
+
+                <a href="LINK_DO_TWOJEJ_PODSTRONY_2.html" class="gallery-item">
+                    <img src="palac.jpg" alt="Szturm na Pałac Zimowy">
+                    <div class="gallery-caption">Szturm na Pałac Zimowy</div>
+                </a>
+
+                <a href="LINK_DO_TWOJEJ_PODSTRONY_3.html" class="gallery-item">
+                    <img src="czerwon.jpg" alt="Czerwona Gwardia">
+                    <div class="gallery-caption">Armia Czerwona i Wojna Domowa</div>
+                </a>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Projekt: Rewolucja Październikowa. Klaudia Karczyńska i Natalia Garwolska.</p>
+    </footer>
+
+</body>
+</html>
